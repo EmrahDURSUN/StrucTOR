@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AddIns>
+  <AddIn 
+    name="TOR Addin"        
+    Publisher="University of Siegen, Institute of Technology Management"
+    description="Technical Operations Research Add-in"         
+    assembly="ConstructorAddIn3.dll"        
+    typename="StructureCreator.ConstructorAddIn8"         
+    host="NewAppDomain"/>
+    
+  <!--
+    Name        = Thats the name which appears on options dialog,
+    Description = Description of the app which appears on the options dialog,
+    Assembly    = This should be same as written on the Properties_Application_Assembly name
+    Typename    = This should be qual to our Namespace + the name of Addin we defined; example : ConstructorAddIn8 : AddIn
+    host        = I didn't see any effect of it yet  
+    
+    Important: In order allocate manifest file on the output folder, 
+                we should go to Manifest properties and change these two options: Build -> None, copy to output Directory -> Copy if newer    
+    -->
+
+</AddIns>

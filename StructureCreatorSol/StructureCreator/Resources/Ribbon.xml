@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI
+  xmlns="http://schemas.spaceclaim.com/customui"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.spaceclaim.com/customui http://schemas.spaceclaim.com/customui/SpaceClaimCustomUI.V19.xsd">
+	<ribbon>
+		<tabs>
+			<tab id="ConstructorAddIn.C#.V19.RibbonTab" command="ConstructorAddIn.C#.V19.RibbonTab">
+        <!-- 
+					For the 'tab' and 'group' elements, you can either specify a 'label' attribute, or you can
+					specify a 'command' attribute.  The 'command' attribute gives the name of a command that you
+					create, whose Text property will be used for the label.  This approach allows for localization
+					since you can use a string resource.  For illustration, this first 'group' uses a 'command' 
+					attribute, and the remaining 'group' elements use a 'label' attribute.  If you specify both
+					attributes, the 'label' attribute is overridden by the 'command' attribute.
+          
+        <group id="SampleAddIn.C#.V19.AssemblyGroup" label="Assembly">
+					<button id="SampleAddIn.C#.V19.CreateAssembly" size="large" command="SampleAddIn.C#.V19.CreateAssembly"/>
+					<button id="SampleAddIn.C#.V19.CopyComponent" size="large" command="SampleAddIn.C#.V19.CopyComponent"/>
+					<button id="SampleAddIn.C#.V19.ShowBom" size="large" command="SampleAddIn.C#.V19.ShowBom"/>
+					<button id="SampleAddIn.C#.V19.AnimationTool" size="large" command="SampleAddIn.C#.V19.AnimationTool"/>
+				</group>
+          
+				-->
+        <group id="ConstructorAddIn.C#.V19.NewStudyGroup" label="Study" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.NewStudy" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.NewStudy"></button>
+        </group>
+        
+        <group id="ConstructorAddIn.C#.V19.SimplifyGroup" label="Repair" layoutOrientation="horizontal" VerticalAlignment="middle">          
+            <button id="ConstructorAddIn.C#.V19.dummy8" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.dummy8"/>
+             <container id="100" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.dummy9" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.dummy9"/>
+              <button id="ConstructorAddIn.C#.V19.dummy10" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.dummy10"/>
+             </container>          
+        </group>
+        
+        <group id="ConstructorAddIn.C#.V19.MaterialsGroup" label="Materials" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Materials" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Materials">
+            <container id="9" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.StudyMaterial" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.StudyMaterial"/>              
+              <button id="ConstructorAddIn.C#.V19.MaterialProperties" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.MaterialProperties"/>              
+              <button id="ConstructorAddIn.C#.V19.ManageMaterial" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.ManageMaterial"/>
+            </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.ConstraintsGroup" label="Constraints" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Constraints" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Constraints">
+            <container id="15" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.AssemblySpace" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.AssemblySpace"/>
+              <button id="ConstructorAddIn.C#.V19.AssemblySpace2D" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.AssemblySpace2D"/>
+            </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.LoadsGroup" label="Loads" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Loads" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Loads">
+            <container id="16" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.OpenStructuralLoads" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.OpenStructuralLoads"/>
+              <button id="ConstructorAddIn.C#.V19.OpenBearingLoads" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.OpenBearingLoads"/>
+              <button id="ConstructorAddIn.C#.V19.linearGlobalLoad" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.linearGlobalLoad"/>
+              <button id="ConstructorAddIn.C#.V19.angularGlobalLoad" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.angularGlobalLoad"/>
+              <separator id="35" width="10"></separator>
+              <button id="ConstructorAddIn.C#.V19.toggleGravityOn" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.toggleGravityOn"/>
+              <button id="ConstructorAddIn.C#.V19.editGravity" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.editGravity"/>
+              <separator id="36" width="10"></separator>
+              <button id="ConstructorAddIn.C#.V19.pointMassAuto" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.pointMassAuto"/>
+              <button id="ConstructorAddIn.C#.V19.pointMassManual" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.pointMassManual"/>
+            </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.SolveGroup" label="Solve" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Solve" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Solve">
+            <container id="20" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.CreateLP" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.CreateLP"/>
+              <button id="ConstructorAddIn.C#.V19.CreateQLP" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.CreateQLP"/>
+              <separator id="25" width="10"></separator>
+              <button id="ConstructorAddIn.C#.V19.GlpsolOpt" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.GlpsolOpt"/>
+              <button id="ConstructorAddIn.C#.V19.CplexOpt" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.CplexOpt"/>
+              <button id="ConstructorAddIn.C#.V19.YasolOpt" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.YasolOpt"/>
+              <separator id="24" width="10"></separator>
+              <button id="ConstructorAddIn.C#.V19.SolImport" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.SolImport"/>
+              <button id="ConstructorAddIn.C#.V19.YasolSolution" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.YasolSolution"/>
+              </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.ResultsGroup" label="Results" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Results" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Results">
+            <container id="22" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.OpenConstructForm" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.OpenConstructForm"/>
+              <button id="ConstructorAddIn.C#.V19.Latex" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Latex"/>
+              <button id="ConstructorAddIn.C#.V19.ResultFiles" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.ResultFiles"/>
+            </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.EditGroup" label="Edit" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Edit" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Edit">
+            <container id="21" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.CreateSpheres" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.CreateSpheres"/>
+            </container>
+          </button>
+        </group>
+        <group id="ConstructorAddIn.C#.V19.DeveloperGroup" label="Developers mode" layoutOrientation="horizontal" VerticalAlignment="middle">
+          <button id="ConstructorAddIn.C#.V19.Develop" size="large" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Develop">
+            <container id="2" layoutOrientation="vertical" resizeItemsToFit="true">
+              <button id="ConstructorAddIn.C#.V19.Dglpsol" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Dglpsol"/>              
+              <button id="ConstructorAddIn.C#.V19.Dcplex" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Dcplex"/>              
+              <button id="ConstructorAddIn.C#.V19.DsolFile" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.DsolFile"/>              
+              <button id="ConstructorAddIn.C#.V19.Dtable" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Dtable"/>                          
+              <button id="ConstructorAddIn.C#.V19.Dlatex" size="small" style="imageandtext" autoExpandOnClick="true" command="ConstructorAddIn.C#.V19.Dlatex"/>
+            </container>
+          </button>
+        </group>
+      </tab>
+		</tabs>
+	</ribbon>
+</customUI>

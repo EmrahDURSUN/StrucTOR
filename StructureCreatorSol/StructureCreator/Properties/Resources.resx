@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NewStudyGroupText" xml:space="preserve">
+    <value>NewStudyGroup</value>
+  </data>
+  <data name="ReadForcePointHint" xml:space="preserve">
+    <value>ReadForcePoint Hint</value>
+  </data>
+  <data name="DevelopHint" xml:space="preserve">
+    <value>Enable developer mode for easier acces to settings and fewer restrictions.
+
+Logfile is available</value>
+  </data>
+  <data name="CreateSCDOCText" xml:space="preserve">
+    <value>CreateSCDOC</value>
+  </data>
+  <data name="SolImportFormText" xml:space="preserve">
+    <value>SolImportForm</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WriteLPImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResultFilesText" xml:space="preserve">
+    <value>Result Files</value>
+  </data>
+  <data name="_07_SDP_Explicit_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\07-SDP-Explicit-02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResultFilesImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Condensed_Geometry_Solution_info_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StructuralLoadsHint" xml:space="preserve">
+    <value>Applies structural loads to a selected point. </value>
+  </data>
+  <data name="_04_QDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\04-QDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SimplifyHint" xml:space="preserve">
+    <value>Simplify Hint</value>
+  </data>
+  <data name="ExtraGroupText" xml:space="preserve">
+    <value>Ex-Functions</value>
+  </data>
+  <data name="SolImportFormHint" xml:space="preserve">
+    <value>SolImportForm Hint</value>
+  </data>
+  <data name="ReadWindowImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ApplySelectedStyleToLayer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportDataHint" xml:space="preserve">
+    <value>Choose file to import</value>
+  </data>
+  <data name="CplexOptHint" xml:space="preserve">
+    <value>Use ILOG CPLEX Optimization Studio.</value>
+  </data>
+  <data name="Dummy7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewRandomVibration_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MergeFacesHint" xml:space="preserve">
+    <value>Fill Gaps between Bars</value>
+  </data>
+  <data name="DevelopImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_console_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataControlHint" xml:space="preserve">
+    <value>Control or Modify the Data</value>
+  </data>
+  <data name="GLPSOLImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_scripting_guide_32X32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenBearingLoadsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons-24-p1_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateLPHint" xml:space="preserve">
+    <value>Create an linear program based on the simulation study.</value>
+  </data>
+  <data name="ReadBearingLoadHint" xml:space="preserve">
+    <value>ReadBearingLoad Hint</value>
+  </data>
+  <data name="AddInManifestInfo" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;&lt;AddIns&gt;&lt;AddIn name="ConstructorAddIn" description="Loaded from a journal file." assembly="Samples\V18\SutructureCreator\ConstructorAddIn.dll" typename="StructureCreator.ConstructorAddIn" host="SameAppDomain" /&gt;&lt;/AddIns&gt;</value>
+  </data>
+  <data name="StrucTorImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StrucTorImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaterialPropImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_display_style_material_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaterialPropertiesText" xml:space="preserve">
+    <value>Material Properties</value>
+  </data>
+  <data name="ManagePhysicalMaterialsHint" xml:space="preserve">
+    <value>Use the Material Browser to manage material libraries, identify favorites, modify properties, and create new materials.</value>
+  </data>
+  <data name="CreateSpheresHint" xml:space="preserve">
+    <value>Postprocess the lattice structure by editing the connections.
+
+A solid sphere is created at all angled joints. The diameter of the solid sphere is a multiple of the largest bar diameter, which is adjacent to a specific connection joint.</value>
+  </data>
+  <data name="LinearGlobalLoadImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_orientation_pan_right_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PointMassManualHint" xml:space="preserve">
+    <value>Use Manual Point Mass to represent the effects of a component or mass not included in the simulation model. Such a component should have very little effect on the model stiffness.
+
+After specifying the location on the model, specify its mass. Point masses are useful for reducing model complexity. </value>
+  </data>
+  <data name="Dummy5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewExplicitDynamics_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DGLPSOLText" xml:space="preserve">
+    <value>GLPK Optimization</value>
+  </data>
+  <data name="EditStabsText" xml:space="preserve">
+    <value>EditStabs</value>
+  </data>
+  <data name="CommandCapsule1Hint" xml:space="preserve">
+    <value>CommandCapsule1 Hint</value>
+  </data>
+  <data name="Trial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trial.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AngularGlobalLoadText" xml:space="preserve">
+    <value>Angular Global Load</value>
+  </data>
+  <data name="_08_QDP_Elastoplastic_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08-QDP-Elastoplastic-02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConstraintsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_environment_magnetostatic_magnetic_flux_parallel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_solution_probe_beam_tool_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_solution_probe_beam_tool_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroundStructureHint" xml:space="preserve">
+    <value>Creates a Ground Structure</value>
+  </data>
+  <data name="ExportStepText" xml:space="preserve">
+    <value>STEP</value>
+  </data>
+  <data name="YasolSolText" xml:space="preserve">
+    <value>Yasol Solution</value>
+  </data>
+  <data name="CreateSCDOCHint" xml:space="preserve">
+    <value>CreateSCDOC Hint</value>
+  </data>
+  <data name="ExportStlText" xml:space="preserve">
+    <value>STL</value>
+  </data>
+  <data name="CreateForceHint" xml:space="preserve">
+    <value>CreateForce Hint</value>
+  </data>
+  <data name="ManageMaterialImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_material_project_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="05-Solve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\05-Solve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConstructHint" xml:space="preserve">
+    <value>Construct the lattice structure.</value>
+  </data>
+  <data name="AngularGlobalLoadHint" xml:space="preserve">
+    <value>Use an angular body load to apply an angular velocity or angular acceleration to a part. 
+
+Select faces or edges to define the direction and location references of the applied load. </value>
+  </data>
+  <data name="Dummy10Text" xml:space="preserve">
+    <value>Connect Joints</value>
+  </data>
+  <data name="StructuralConstraintsText" xml:space="preserve">
+    <value>Create 3D Volume</value>
+  </data>
+  <data name="ReadDataText" xml:space="preserve">
+    <value>ReadData</value>
+  </data>
+  <data name="LoadsText" xml:space="preserve">
+    <value>Loads</value>
+  </data>
+  <data name="ReadPointHint" xml:space="preserve">
+    <value>ReadPoint Hint</value>
+  </data>
+  <data name="02-overview1920x1080-06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-overview1920x1080-06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManageImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_manage_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StructuralConstraintsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_distributed_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateCrossSectionHint" xml:space="preserve">
+    <value>Create assembly space</value>
+  </data>
+  <data name="PointMassAutoHint" xml:space="preserve">
+    <value>Use Auto Point Mass to represent the effects of an existing component in the simulation model. This is useful for simplifying the simulation model.
+
+To assign a point mass, select the geometric item on which the point mass acts. </value>
+  </data>
+  <data name="WErstelleKugelText" xml:space="preserve">
+    <value>WErstelleKugel</value>
+  </data>
+  <data name="PointCloudHint" xml:space="preserve">
+    <value>User defines a Structure Dimensions</value>
+  </data>
+  <data name="03-overview1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-overview1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConstructImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraphicsWireframe32(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_00HWD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_00HWD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolImportHint" xml:space="preserve">
+    <value>Import a CPLEX  XML solution file into the simulation study.</value>
+  </data>
+  <data name="overview1258x717-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overview1258x717-04.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leftArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leftArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadCaseAttributesText" xml:space="preserve">
+    <value>Load Case Attributes</value>
+  </data>
+  <data name="BearingLoadsCapsuleHint" xml:space="preserve">
+    <value>BearingLoadsCapsule Hint</value>
+  </data>
+  <data name="OpenStructuralLoadsHint" xml:space="preserve">
+    <value>OpenStructuralLoads Hint</value>
+  </data>
+  <data name="CompleteSelectionText" xml:space="preserve">
+    <value>Cloose Layer</value>
+  </data>
+  <data name="01-overview1920x10801" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01-overview1920x10801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_01_MIP_optimization_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01-MIP-optimization-01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReadBearingLoadText" xml:space="preserve">
+    <value>ReadBearingLoad</value>
+  </data>
+  <data name="NewStudyGroupHint" xml:space="preserve">
+    <value>NewStudyGroup Hint</value>
+  </data>
+  <data name="ManagePhysicalMaterialsText" xml:space="preserve">
+    <value>Manage Physical Materials</value>
+  </data>
+  <data name="CreateCrossSectionText" xml:space="preserve">
+    <value>Create Body</value>
+  </data>
+  <data name="Dummy4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewThermalElectric_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="04-PointCloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\04-PointCloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewShapeOptimization_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YasolSolHint" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateBarImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreateBarImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToggleGravityOnText" xml:space="preserve">
+    <value>Toggle Gravity On</value>
+  </data>
+  <data name="ReadPointImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AssemblyConcentric32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BearingLoadsCapsuleText" xml:space="preserve">
+    <value>BearingLoadsCapsule</value>
+  </data>
+  <data name="_03_SDP_optimization_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-SDP-optimization-01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DCreateStructureHint" xml:space="preserve">
+    <value>CreateStructure Hint</value>
+  </data>
+  <data name="DTableHint" xml:space="preserve">
+    <value>Import a CSV file and edit it.</value>
+  </data>
+  <data name="OpenConstructFormText" xml:space="preserve">
+    <value>Generate Lattice Structure</value>
+  </data>
+  <data name="MergeFacesText" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="CreateQLPText" xml:space="preserve">
+    <value>Create QLP</value>
+  </data>
+  <data name="Dummy9Text" xml:space="preserve">
+    <value>Select Joint</value>
+  </data>
+  <data name="WErstelleKugelHint" xml:space="preserve">
+    <value>WErstelleKugel Hint</value>
+  </data>
+  <data name="DLatexHint" xml:space="preserve">
+    <value>Create a mechanical drawing of the lattice structure using a TikZ Library for lattice structures.</value>
+  </data>
+  <data name="ResultFilesHint" xml:space="preserve">
+    <value>View the results of the simulation study.</value>
+  </data>
+  <data name="ManageText" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="icon_connections_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_connections_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PPCylinder" xml:space="preserve">
+    <value>Point to Point Cylinder</value>
+  </data>
+  <data name="03-overview1920x1080-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-overview1920x1080-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DLatexText" xml:space="preserve">
+    <value>Create PDF</value>
+  </data>
+  <data name="GroundStructureText" xml:space="preserve">
+    <value>Ground</value>
+  </data>
+  <data name="CreatePPBarHint" xml:space="preserve">
+    <value>Create Lines From Point to Point</value>
+  </data>
+  <data name="EditGravityImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_editselecteditem_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PPBar" xml:space="preserve">
+    <value>Point to Point Bar</value>
+  </data>
+  <data name="_08_QDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08-QDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewStudyText" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="ToggleGravityOnImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_environment_inertial_standard_earth_gravity_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FccImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FccImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_solution_probe_joint_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_solution_probe_adjustment_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_solution_probe_adjustment_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="02-overview1920x1080-061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-overview1920x1080-061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewHarmonicResponse_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckForcesHint" xml:space="preserve">
+    <value>CheckForces Hint</value>
+  </data>
+  <data name="MaterialsText" xml:space="preserve">
+    <value>Materials</value>
+  </data>
+  <data name="CreatePPBarImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreatePPBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaterialPropertiesHint" xml:space="preserve">
+    <value>Displays material properties</value>
+  </data>
+  <data name="FccText" xml:space="preserve">
+    <value>FCC</value>
+  </data>
+  <data name="ResultsText" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="RibbonTabText" xml:space="preserve">
+    <value>ConstrucTOR</value>
+  </data>
+  <data name="Dummy8Text" xml:space="preserve">
+    <value>Detect Joints</value>
+  </data>
+  <data name="CylinderPPHint" xml:space="preserve">
+    <value>Creates a Bar from Point to Point</value>
+  </data>
+  <data name="DCPLEXHint" xml:space="preserve">
+    <value>Use ILOG CPLEX Optimization Studio.</value>
+  </data>
+  <data name="Dummy10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_connections_joint_fixed_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewStaticStructural_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditGravityHint" xml:space="preserve">
+    <value>Modify the magnitude and direction of gravity. To specify the gravity direction either specify a vector, enter an angle, or select a geometric reference.</value>
+  </data>
+  <data name="DCPLEXText" xml:space="preserve">
+    <value>CPLEX Optimization</value>
+  </data>
+  <data name="OpenBearingLoadsText" xml:space="preserve">
+    <value>Bearing Loads</value>
+  </data>
+  <data name="_03_SDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-SDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CompleteSelectionImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CompleteSelectionImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReadForcePointText" xml:space="preserve">
+    <value>ReadForcePoint</value>
+  </data>
+  <data name="EditStabsHint" xml:space="preserve">
+    <value>EditStabs Hint</value>
+  </data>
+  <data name="DLatexImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_worksheet_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateSpheresImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaeSplitEdges.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StrucTorHint" xml:space="preserve">
+    <value>Now User may create a StrucTOR</value>
+  </data>
+  <data name="PointMassManualText" xml:space="preserve">
+    <value>Point Mass (Manual)</value>
+  </data>
+  <data name="CheckForcesText" xml:space="preserve">
+    <value>CheckForces</value>
+  </data>
+  <data name="PointMassAutoImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_environment_optimization_mass_constraint_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolImportText" xml:space="preserve">
+    <value>CPLEX Solution</value>
+  </data>
+  <data name="icon_mesh_by_id_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_mesh_by_id_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_joint_measures_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ConstructText" xml:space="preserve">
+    <value>Generate Lattice</value>
+  </data>
+  <data name="ImportDataImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImportData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadCaseAttributesImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_edge_direction_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResultsHint" xml:space="preserve">
+    <value>Show the results of the simulation study.
+
+CAD, PDF and CSV is available.</value>
+  </data>
+  <data name="Figure0001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Figure0001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LinearGlobalLoadHint" xml:space="preserve">
+    <value>Use a linear body load to apply a linear acceleration to a part.
+
+Specify the acceleration direction by selecting a face normal to the direction of the load or by specifying an angle or a vector.</value>
+  </data>
+  <data name="ConstraintsHint" xml:space="preserve">
+    <value>Applies a fixed, pinned, frictionless, or prescribed displacement constraint to the selected geometry. You can apply constraints to multiple entities you select. </value>
+  </data>
+  <data name="_07_SDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\07-SDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DTableText" xml:space="preserve">
+    <value>Import/Edit CSV</value>
+  </data>
+  <data name="GlpsolOptText" xml:space="preserve">
+    <value>GLPK Optimization</value>
+  </data>
+  <data name="TableImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_userdefined_macro_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolFileImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_archive_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StudyMaterialsText" xml:space="preserve">
+    <value>Study Materials</value>
+  </data>
+  <data name="LoadsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_connections_contact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResultsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Result.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StructuralLoadsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_environment_acoustic_port_in_duct_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenStructuralLoadsText" xml:space="preserve">
+    <value>OpenStructuralLoads</value>
+  </data>
+  <data name="_04_QDP_optimization_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\04-QDP-optimization-01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WriteLPText" xml:space="preserve">
+    <value>WriteLP</value>
+  </data>
+  <data name="StudyMaterialsHint" xml:space="preserve">
+    <value>View the original physical materials for the active simulation study, and assign new study materials as needed. 
+
+Use Study Materials to assign the correct matrials to your components. This is important for simulating an accurate representation of the physical model.</value>
+  </data>
+  <data name="CreateLPText" xml:space="preserve">
+    <value>Create LP</value>
+  </data>
+  <data name="CylinderPPText" xml:space="preserve">
+    <value>Single Bar</value>
+  </data>
+  <data name="RibbonTabCapsuleHint" xml:space="preserve">
+    <value>RibbonTabCapsule Hint</value>
+  </data>
+  <data name="CPLEXImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon__validate_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RibbonTabCapsuleText" xml:space="preserve">
+    <value>RibbonTabCapsule</value>
+  </data>
+  <data name="DSolFileHint" xml:space="preserve">
+    <value>Import a CPLEX  XML solution file into the simulation study.</value>
+  </data>
+  <data name="ReadDataHint" xml:space="preserve">
+    <value>ReadData Hint</value>
+  </data>
+  <data name="ExportStepHint" xml:space="preserve">
+    <value>Select Quality and Export Step File</value>
+  </data>
+  <data name="ForthGroupText" xml:space="preserve">
+    <value>Structures</value>
+  </data>
+  <data name="CreateSpheresText" xml:space="preserve">
+    <value>Postprocessing</value>
+  </data>
+  <data name="Bar" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="LatexText" xml:space="preserve">
+    <value>Create PDF</value>
+  </data>
+  <data name="LatexHint" xml:space="preserve">
+    <value>Create a mechanical drawing of the lattice structure using a TikZ Library for lattice structures.</value>
+  </data>
+  <data name="CreatePPCylinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreatePPCylinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditGravityText" xml:space="preserve">
+    <value>Edit Gravity</value>
+  </data>
+  <data name="LoadCaseAttributesHint" xml:space="preserve">
+    <value>View and modify study attributes (loads and constraints) in one place.</value>
+  </data>
+  <data name="NewStudyHint" xml:space="preserve">
+    <value>New Simulation Study
+
+Create a new simulation study.
+
+Choose a study type, and optionally change study settings for example study name.</value>
+  </data>
+  <data name="StructuralConstraints2DHint" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CplexOptText" xml:space="preserve">
+    <value>Cplex Optimization</value>
+  </data>
+  <data name="AngularGlobalLoadImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_orientation_rotate_-_z_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateLPImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_userdefined_macro_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BccText" xml:space="preserve">
+    <value>BCC</value>
+  </data>
+  <data name="ReadPointText" xml:space="preserve">
+    <value>ReadPoint</value>
+  </data>
+  <data name="ImportDataText" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="FccHint" xml:space="preserve">
+    <value>Create FCC</value>
+  </data>
+  <data name="CreateBarHint" xml:space="preserve">
+    <value>Creates Sample Bars for each Plane</value>
+  </data>
+  <data name="CreateForceText" xml:space="preserve">
+    <value>CreateForce</value>
+  </data>
+  <data name="StructuralConstraintsHint" xml:space="preserve">
+    <value>Create new assembly space
+
+The assembly space is defined by a fixed point cloud.
+
+</value>
+  </data>
+  <data name="GlpsolOptHint" xml:space="preserve">
+    <value>Use GLPK optimization.
+
+Optionally GLPK can be used for data conversion from GNU MathProg model to CPLEX lp model.</value>
+  </data>
+  <data name="02-overview1920x1080-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-overview1920x1080-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_06_QMIP_Reconfigurability_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\06-QMIP-Reconfigurability-02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy8Hint" xml:space="preserve">
+    <value>Detect joints with corrupt connection.</value>
+  </data>
+  <data name="LoadsHint" xml:space="preserve">
+    <value> TEST123 </value>
+  </data>
+  <data name="SimplifyText" xml:space="preserve">
+    <value>Simplify</value>
+  </data>
+  <data name="MaterialsHint" xml:space="preserve">
+    <value>View the original physical materials for the active simulation study, and assign new study materials as needed. 
+
+Use Study Materials to assign the correct matrials to your components. This is important for simulating an accurate representation of the physical model.</value>
+  </data>
+  <data name="ToggleGravityOnHint" xml:space="preserve">
+    <value>Enables you to unsuppress the gravity load. 
+
+By default, gravity acts in the negative Y direction. A symbol at the model origin indicates the direction of gravity. To modify the gravity magnitude or direction, use the Edit Gravity command.</value>
+  </data>
+  <data name="CreateStructureImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraphicsWireframe32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="03-new-study-interface1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-new-study-interface1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsHint" xml:space="preserve">
+    <value>Settings Hint</value>
+  </data>
+  <data name="NewStudyImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_analysis_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy9Hint" xml:space="preserve">
+    <value>Select a specific joint.</value>
+  </data>
+  <data name="YasolOptText" xml:space="preserve">
+    <value>YASOL Optimization</value>
+  </data>
+  <data name="OpenBearingLoadsHint" xml:space="preserve">
+    <value>Applies bearing loads to a selected point. </value>
+  </data>
+  <data name="ManageHint" xml:space="preserve">
+    <value>Manage Hint</value>
+  </data>
+  <data name="_05_MIP_Eigenvalue_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\05-MIP-Eigenvalue-02.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BccImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BccImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overview1258x717-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overview1258x717-05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaterialsImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_tags_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="03-new-study-interface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\03-new-study-interface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolveHint" xml:space="preserve">
+    <value>Use algorithm-driven optimization to generate and optimize lattice structures. </value>
+  </data>
+  <data name="CreateBarText" xml:space="preserve">
+    <value>Three Bars</value>
+  </data>
+  <data name="01-overview1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01-overview1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DGLPSOLHint" xml:space="preserve">
+    <value>Use GLPK optimization.
+
+Optionally GLPK can be used for data conversion from GNU MathProg model to CPLEX lp model.</value>
+  </data>
+  <data name="icon_project_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_project_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_solution_results_lattice_density_beta_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_solution_results_lattice_density_beta_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_05_MIP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\05-MIP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenConstructFormHint" xml:space="preserve">
+    <value>Generate a lattice structure based on a CPLEX XML solution file.</value>
+  </data>
+  <data name="_02_QMIP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-QMIP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReadDataImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blend32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirstGroupText" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="StructuralConstraints2DText" xml:space="preserve">
+    <value>Create 2D Surface</value>
+  </data>
+  <data name="CompleteSelectionHint" xml:space="preserve">
+    <value>Selected layer will be filled with Bars</value>
+  </data>
+  <data name="ReadWindowText" xml:space="preserve">
+    <value>ReadWindow</value>
+  </data>
+  <data name="SecondGroupText" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="SolveImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_boltsolve_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy10Hint" xml:space="preserve">
+    <value>Connect joints to adjacent joints.</value>
+  </data>
+  <data name="DCreateStructureText" xml:space="preserve">
+    <value>CreateStructure</value>
+  </data>
+  <data name="PointCloudText" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="02-overview1920x1080-31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-overview1920x1080-31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConstructorAddIn" xml:space="preserve">
+    <value>ConstrucTOR Add-in</value>
+  </data>
+  <data name="CPLEXOptImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon__validate_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_orientation_pan_down_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_orientation_pan_down_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_00HWD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\00HWD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_01_MIP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01-MIP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommandCapsule1Text" xml:space="preserve">
+    <value>CommandCapsule1</value>
+  </data>
+  <data name="DataControlText" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="ReadWindowHint" xml:space="preserve">
+    <value>ReadWindow Hint</value>
+  </data>
+  <data name="WriteLPHint" xml:space="preserve">
+    <value>WriteLP Hint</value>
+  </data>
+  <data name="PointCloudImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PointCloudImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WErstelleArrowText" xml:space="preserve">
+    <value>WErstelleArrow</value>
+  </data>
+  <data name="Dummy6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewEigenvalueBuckling_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolveText" xml:space="preserve">
+    <value>Built</value>
+  </data>
+  <data name="rightArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rightArrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StrucTorText" xml:space="preserve">
+    <value>StrucTOR</value>
+  </data>
+  <data name="CreateQLPHint" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ExportStlHint" xml:space="preserve">
+    <value>Select Quality and Export STL File</value>
+  </data>
+  <data name="_06_QMIP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\06-QMIP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dummy11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_NewMagnetostatic_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThirdGroupText" xml:space="preserve">
+    <value>Modifications and Repair</value>
+  </data>
+  <data name="CreatePPBarText" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="PointMassManualImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Addselecteditem_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BccHint" xml:space="preserve">
+    <value>Create BCC</value>
+  </data>
+  <data name="ConstraintsText" xml:space="preserve">
+    <value>Constraints </value>
+  </data>
+  <data name="DSolFileText" xml:space="preserve">
+    <value>CPLEX Solution</value>
+  </data>
+  <data name="DevelopText" xml:space="preserve">
+    <value>Developers mode</value>
+  </data>
+  <data name="WErstelleArrowHint" xml:space="preserve">
+    <value>WErstelleArrow Hint</value>
+  </data>
+  <data name="LinearGlobalLoadText" xml:space="preserve">
+    <value>Linear Global Load</value>
+  </data>
+  <data name="PointMassAutoText" xml:space="preserve">
+    <value>Point Mass (Auto)</value>
+  </data>
+  <data name="Ribbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ribbon.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MergetImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MergetImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SimplifyImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons-32-p1_149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_02_Q_MIP_optimization_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\02-Q-MIP-optimization-01.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StructuralLoadsText" xml:space="preserve">
+    <value>Structural Load</value>
+  </data>
+  <data name="06-Result-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\06-Result-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

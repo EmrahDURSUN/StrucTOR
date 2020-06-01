@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F1D3D91-E9FB-47B2-86FD-3A6F885F3265}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StructureCreator</RootNamespace>
+    <AssemblyName>ConstructorAddIn3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\..\ProgramData\SpaceClaim\AddIns\08052020\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>StructureCreator.manifest.xml</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ILOG.Concert, Version=12.10.0.0, Culture=neutral, PublicKeyToken=7906592bc7cc7340, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\IBM\ILOG\CPLEX_Studio1210\cplex\bin\x64_win64\ILOG.Concert.dll</HintPath>
+    </Reference>
+    <Reference Include="ILOG.CPLEX, Version=12.10.0.0, Culture=neutral, PublicKeyToken=7906592bc7cc7340, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\IBM\ILOG\CPLEX_Studio1210\cplex\bin\x64_win64\ILOG.CPLEX.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceClaim.Api.V19, Version=19.1.17427.0, Culture=neutral, PublicKeyToken=7210645d4d5e3a39, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\ANSYS Inc\ANSYS Student\v201\scdm\SpaceClaim.Api.V19\SpaceClaim.Api.V19.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddIn.cs" />
+    <Compile Include="Commands\Base\BaseCommandCapsule.cs" />
+    <Compile Include="Commands\Bcc.cs" />
+    <Compile Include="Commands\CompleteSelection.cs" />
+    <Compile Include="Commands\Constraints\Create2DAssemblySpace.cs" />
+    <Compile Include="Commands\Constraints\CreateAssemblySpace.cs" />
+    <Compile Include="Commands\CreateBar.cs" />
+    <Compile Include="Commands\CreatePointCloud.cs" />
+    <Compile Include="Commands\CreatePPBar.cs" />
+    <Compile Include="Commands\CreateStrucTor.cs" />
+    <Compile Include="Commands\CylinderPP.cs" />
+    <Compile Include="Commands\DataControl.cs" />
+    <Compile Include="Commands\DropdownButton\Constraints.cs" />
+    <Compile Include="Commands\DropdownButton\Loads.cs" />
+    <Compile Include="Commands\DropdownButton\Edit.cs" />
+    <Compile Include="Commands\DropdownButton\Materials.cs" />
+    <Compile Include="Commands\DropdownButton\ReadData.cs" />
+    <Compile Include="Commands\DropdownButton\Results.cs" />
+    <Compile Include="Commands\DropdownButton\Simplify.cs" />
+    <Compile Include="Commands\DropdownButton\Solve.cs" />
+    <Compile Include="Commands\Edit\CreateSpheres.cs" />
+    <Compile Include="Commands\ExportStep.cs" />
+    <Compile Include="Commands\ExportStl.cs" />
+    <Compile Include="Commands\Fcc.cs" />
+    <Compile Include="Commands\GroundStructure.cs" />
+    <Compile Include="Commands\ImportData.cs" />
+    <Compile Include="Commands\ImportingFun.cs" />
+    <Compile Include="Commands\Loads\AngularGlobalLoad.cs" />
+    <Compile Include="Commands\Loads\BearingLoadsCapsule.cs" />
+    <Compile Include="Commands\Loads\RemoveArrowLoads.cs" />
+    <Compile Include="Commands\Loads\EditGravity.cs" />
+    <Compile Include="Commands\Loads\LinearGlobalLoad.cs" />
+    <Compile Include="Commands\Loads\OpenBearingLoads.cs" />
+    <Compile Include="Commands\Loads\OpenStructuralLoads.cs" />
+    <Compile Include="Commands\Loads\PointMassAuto.cs" />
+    <Compile Include="Commands\Loads\PointMassManual.cs" />
+    <Compile Include="Commands\Loads\ReadBearingLoad.cs" />
+    <Compile Include="Commands\Loads\ReadForcePoint.cs" />
+    <Compile Include="Commands\Loads\RemoveArrow.cs" />
+    <Compile Include="Commands\Loads\StructuralLoads.cs" />
+    <Compile Include="Commands\Loads\ToggleGravityOn.cs" />
+    <Compile Include="Commands\Edit\Postprocessing.cs" />
+    <Compile Include="Commands\Materials\ManagePhysicalMaterials.cs" />
+    <Compile Include="Commands\Materials\MaterialProperties.cs" />
+    <Compile Include="Commands\Materials\StudyMaterials.cs" />
+    <Compile Include="Commands\MergeFaces.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopCreateStructure.cs" />
+    <Compile Include="Commands\DropdownButton\Develop.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopEditStabs.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopGLPSOL.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopLatex.cs" />
+    <Compile Include="Commands\NewStudy\CreateSCDOC.cs" />
+    <Compile Include="Commands\Results\OpenConstructForm.cs" />
+    <Compile Include="Commands\Solve\CreateQLP.cs" />
+    <Compile Include="Commands\Solve\YasolOpt.cs" />
+    <Compile Include="Commands\Solve\CreateLP.cs" />
+    <Compile Include="Commands\Results\Construct.cs" />
+    <Compile Include="Commands\Results\CSVDataRead.cs" />
+    <Compile Include="Commands\Results\PointLocation.cs" />
+    <Compile Include="Commands\Results\ResultFiles.cs" />
+    <Compile Include="Commands\RibbonTabCapsule.cs" />
+    <Compile Include="Commands\Simplify\Dummy10.cs" />
+    <Compile Include="Commands\Simplify\Dummy8.cs" />
+    <Compile Include="Commands\Simplify\Dummy9.cs" />
+    <Compile Include="Commands\NewStudy\NewStudy.cs" />
+    <Compile Include="Commands\DropdownButton\NewStudyGroup.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopSolImport.cs" />
+    <Compile Include="Commands\DeveloperMode\DevelopCPLEX.cs" />
+    <Compile Include="Commands\PointTarget.cs" />
+    <Compile Include="Commands\Solve\CplexOpt.cs" />
+    <Compile Include="Commands\Solve\GlpsolOpt.cs" />
+    <Compile Include="Commands\Solve\Latex.cs" />
+    <Compile Include="Commands\Solve\SolImport.cs" />
+    <Compile Include="Commands\Solve\YasolSolution.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopCPLEXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopCPLEXForm.Designer.cs">
+      <DependentUpon>DevelopCPLEXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DataControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DataControlForm.Designer.cs">
+      <DependentUpon>DataControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DialogBox.Designer.cs">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopEditStabsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopEditStabsForm.Designer.cs">
+      <DependentUpon>DevelopEditStabsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\EditUI\CreatespheresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\EditUI\CreatespheresForm.Designer.cs">
+      <DependentUpon>CreatespheresForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ExportStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ExportStepForm.Designer.cs">
+      <DependentUpon>ExportStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ExportStlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ExportStlForm.Designer.cs">
+      <DependentUpon>ExportStlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopGLPSOLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopGLPSOLForm.Designer.cs">
+      <DependentUpon>DevelopGLPSOLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopLatexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopLatexForm.Designer.cs">
+      <DependentUpon>DevelopLatexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ConstraintUI\CreateCrossSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ConstraintUI\CreateCrossSectionForm.Designer.cs">
+      <DependentUpon>CreateCrossSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\LoadsUI\CreateBearingLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\LoadsUI\CreateBearingLoad.Designer.cs">
+      <DependentUpon>CreateBearingLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\LoadsUI\CreateForceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\LoadsUI\CreateForceForm.Designer.cs">
+      <DependentUpon>CreateForceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ConstructForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ConstructForm.Designer.cs">
+      <DependentUpon>ConstructForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ResultsFormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ResultsFormNew.Designer.cs">
+      <DependentUpon>ResultsFormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CreateLPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CreateLPForm.Designer.cs">
+      <DependentUpon>CreateLPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\NewStudyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\NewStudyForm.Designer.cs">
+      <DependentUpon>NewStudyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\OptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI extensions\OptionsControl.Designer.cs">
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopOptionsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopOptionsItem.Designer.cs">
+      <DependentUpon>DevelopOptionsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\PointsCalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\PointsCalForm.Designer.cs">
+      <DependentUpon>PointsCalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\ResultsUI\ResultsForm.Designer.cs">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolFileForm.Designer.cs">
+      <DependentUpon>SolFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\DevelopSolImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\DevelopSolImportForm.Designer.cs">
+      <DependentUpon>DevelopSolImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\cplexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\cplexForm.Designer.cs">
+      <DependentUpon>cplexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CplexOption1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CplexOption1.Designer.cs">
+      <DependentUpon>CplexOption1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CplexOption2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\CplexOption2.Designer.cs">
+      <DependentUpon>CplexOption2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\DiameterOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\DiameterOption.Designer.cs">
+      <DependentUpon>DiameterOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\glpsolOptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\glpsolOptForm.Designer.cs">
+      <DependentUpon>glpsolOptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\latexform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\latexform.Designer.cs">
+      <DependentUpon>latexform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\solImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\SolveUI\solImportForm.Designer.cs">
+      <DependentUpon>solImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI extensions\UserGuideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI extensions\UserGuideForm.Designer.cs">
+      <DependentUpon>UserGuideForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ConstraintUI\CreateCrossSectionForm.resx">
+      <DependentUpon>CreateCrossSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopCPLEXForm.resx">
+      <DependentUpon>DevelopCPLEXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DataControlForm.resx">
+      <DependentUpon>DataControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DialogBox.resx">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopEditStabsForm.resx">
+      <DependentUpon>DevelopEditStabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\EditUI\CreatespheresForm.resx">
+      <DependentUpon>CreatespheresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ExportStepForm.resx">
+      <DependentUpon>ExportStepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ExportStlForm.resx">
+      <DependentUpon>ExportStlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopGLPSOLForm.resx">
+      <DependentUpon>DevelopGLPSOLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopLatexForm.resx">
+      <DependentUpon>DevelopLatexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\LoadsUI\CreateBearingLoad.resx">
+      <DependentUpon>CreateBearingLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\LoadsUI\CreateForceForm.resx">
+      <DependentUpon>CreateForceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ResultsUI\ConstructForm.resx">
+      <DependentUpon>ConstructForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ResultsUI\ResultsFormNew.resx">
+      <DependentUpon>ResultsFormNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\CreateLPForm.resx">
+      <DependentUpon>CreateLPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\NewStudyForm.resx">
+      <DependentUpon>NewStudyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\OptionsControl.resx">
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopOptionsItem.resx">
+      <DependentUpon>DevelopOptionsItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\PointsCalForm.resx">
+      <DependentUpon>PointsCalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\ResultsUI\ResultsForm.resx">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolFileForm.resx">
+      <DependentUpon>SolFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\DevelopSolImportForm.resx">
+      <DependentUpon>DevelopSolImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\cplexForm.resx">
+      <DependentUpon>cplexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\CplexOption1.resx">
+      <DependentUpon>CplexOption1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\CplexOption2.resx">
+      <DependentUpon>CplexOption2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\DiameterOption.resx">
+      <DependentUpon>DiameterOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\glpsolOptForm.resx">
+      <DependentUpon>glpsolOptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\latexform.resx">
+      <DependentUpon>latexform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\SolveUI\solImportForm.resx">
+      <DependentUpon>solImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI extensions\UserGuideForm.resx">
+      <DependentUpon>UserGuideForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\StructureCreator.UI_extensions.DataControlForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Ribbon.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StructureCreator.manifest.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreatePPBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointCloudImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00HWD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataControlImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trial.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrucTorImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BccImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FccImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreatePPCylinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateBarImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompleteSelectionImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MergetImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindMatchingFaces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLayers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLayers1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLayers2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2DPullTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphicsWireframe32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateNote32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperSize32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_198.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_1901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_1421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2DMoveTool32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_278.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OneView32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewWindow32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FourView32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrefsPanelMisc32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperFormat32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweep32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrefsPanelMisc32%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphicsWireframe32%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrefsPanelMisc32%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-32-p1_132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLayers21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateLayers22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2DPullTool1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindMatchingFaces1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrefsPanelMisc321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blend32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bend24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplySelectedStyleToLayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssemblyConcentric32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewDrawingSheet32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_console_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_configure_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_analysis_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_boltsolve_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_revert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_assemble_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_set_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_configure_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_materials_assignment_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_display_style_material_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_general_materials_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_distributed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_worksheet_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_userdefined_macro_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_archive_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_validate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_scripting_guide_32X32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon__validate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_solution_results_lattice_density_beta_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Condensed_Geometry_Solution_info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resultnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_manage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tags_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon__validate_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_edge_direction_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_solution_probe_joint_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_joint_measures_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_joint_fixed_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_environment_magnetostatic_magnetic_flux_parallel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_solid_form_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_orientation_rotate_-_z_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_orientation_pan_right_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_orientation_pan_down_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_environment_inertial_standard_earth_gravity_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_editselecteditem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Addselecteditem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_environment_optimization_mass_constraint_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_environment_acoustic_port_in_duct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewShapeOptimization_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewExplicitDynamics_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewHarmonicResponse_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewEigenvalueBuckling_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewStaticStructural_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewTransientStructural_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewModal_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewMagnetostatic_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewThermalElectric_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NewRandomVibration_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_connections_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_material_project_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_mesh_by_id_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_project_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_solution_probe_adjustment_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_solution_probe_beam_tool_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaeSplitEdges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-24-p1_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_00HWD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Figure0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01 Total Deforamation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 02_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 01_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 02_scaled_slow11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04 Vektor 03_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 04_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 05_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04 Vektor 05_scaled.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04 Vektor 06_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03 Mesh 03_scaled_slow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview1258x717-04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview1258x717-05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-MIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-QMIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-SDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04-QDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05-MIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06-QMIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07-SDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08-QDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-MIP-optimization-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-Q-MIP-optimization-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-SDP-optimization-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04-QDP-optimization-01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05-MIP-Eigenvalue-02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06-QMIP-Reconfigurability-02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07-SDP-Explicit-02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08-QDP-Elastoplastic-02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightArrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-overview1920x1080-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-overview1920x1080-061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightArrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-overview1920x1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-overview1920x1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-overview1920x1080-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-overview1920x1080-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-new-study-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-overview1920x10801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02-overview1920x1080-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03-new-study-interface1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04-PointCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05-Solve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06-Result-01.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
